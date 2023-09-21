@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family-Poppins:wght@300;400;500;600;700;800;900&display-swap");
+
+
+* {
+margin: 0; 
+padding: 0;
+box-sizing: border-box; 
+font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    Justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+nav {
+  background-color: transparent;
+  opacity: 0.9;
+  background: rgba(0, 0, 0, 0.3);
+  color: #F9F2ED;
+  height: 75px;
+  position: fixed; 
+  width: 100%; 
+  top: 0; 
+  z-index: 1000;
+}
+
+.container-header{
+  max-width: 1200px; 
+  margin: 0 ; 
+  padding: 0; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  height: 100%;
+}
+
+.logo img {
+  width: 50%;
+  height: auto;
+}
+
+.text h1 {
+  font-size: 45px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  text-align: center;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.container {
+  width: 800px;
+  background: transparent;
+  opacity: 0.8;
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(142, 151, 155, 0.509);
+  backdrop-filter: blur (20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  color: #F9F2ED;
+  border-radius: 10px;
+  padding: 30px 40px;
+  justify-content: center;
+  align-items: center;
+  display: fixed;
+  backdrop-filter: blur(20px);
+}
+
+h1 {
+  font-size: 23px;
+  text-align: center;
+  color: #F9F2ED;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+  font-weight: 500;
+}
+
+input[type="submit"] {
+  display: flex;
+  width: 60%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #3cafe4;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+input[type="submit"]:hover {
+    scale: 0.95;
+  transition: all 0.1s ease-in-out;
+  background-color: #1f5168;
+}
+.result {
+  color: rgb(35, 35, 35);
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 0.75rem;
+}
+
+.high, .moderate, .low {
+  font-size: 40px;
+}
+
+.result h2 {
+  margin-top: 0;
+  color: rgb(35, 35, 35);
+}
+
+.select-box {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 2rem;
+  text-align: center;
+  background: transparent;
+  color: #fff;
+  border-color: #fff;
+}
+
+.select-box option {
+  color: #333;
+  border-radius: 40px;
+}
+.form-group {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.result{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.result p, h2{
+  text-align: center;
+}
+
+.result .high{
+  color: rgb(16, 158, 16);
+  font-weight: 600;
+}
+
+.result .moderate{
+  color: rgb(10, 125, 202);
+  font-weight: 600;
+}
+
+.result .low{
+  color: rgb(176, 60, 11);
+  font-weight: 600;
+}
+
+.imgIL{
+  display: none;
+}
+
+footer {
+  background-color: transparent;
+  opacity: 0.9;
+  background: rgba(0, 0, 0, 0.3);
+  color: #F9F2ED;
+  height: 100px;
+  position: fixed; 
+  width: 100%; 
+  bottom: 0; 
+  z-index: 1000;
+}
+
+.container-footer {
+  max-width: 100%; 
+  margin: 0 ; 
+  padding: 20px; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  height: 100%;
+  justify-content: flex-start;
+}
+
+.image-container:nth-child(2) {
+  justify-content: center; /* Gambar kedua di tengah */
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Sesuaikan dengan lebar total gambar */
+  flex-grow: 1;
+}
+
+.image-container a {
+  display: flex;
+  justify-content: flex-end; /* Mengatur Gambar 3 ke sudut kanan */
+  align-items: center;
+  width: 100%; /* Sesuaikan dengan lebar total gambar */
+}
+
+.image-container:nth-child(1) img {
+  width: 35%; /* Sesuaikan dengan ukuran gambar */
+  height: auto;
+}
+
+.image-container:nth-child(2) img {
+  width: 90%; /* Sesuaikan dengan ukuran gambar */
+  height: 75px;
+}
+
+.image-container:nth-child(3) .img3 img {
+  width: 25%; /* Sesuaikan dengan ukuran gambar */
+  height: auto;
+}
+
+
+
